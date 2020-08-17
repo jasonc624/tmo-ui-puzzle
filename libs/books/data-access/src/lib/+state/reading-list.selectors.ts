@@ -25,7 +25,7 @@ export const getReadingListEntities = createSelector(
   selectEntities
 );
 
-export interface ReadingListBook extends Book, Omit<ReadingListItem, 'bookId'> {
+export interface ReadingListBook extends Omit<ReadingListItem, 'bookId'> {
   isAdded: boolean;
 }
 
